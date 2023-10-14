@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cultural Programmes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #052c28;
+        }
+
+        .navbar {
+            background-color: rgb(1, 34, 34);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: 0 0 20px 3px rgb(6, 78, 78);
+        }
+
+        .navbox {
+            color: rgb(100, 255, 255);
+            text-decoration: none;
+            font-size: 17px;
+            font-family: ubuntu;
+            transition-duration: .1s;
+            padding: 1vh;
+            border-radius: 10vh;
+        }
+
+        .box {
+            margin: 4vh 3vh 4vh 3vh;
+        }
+
+        .navbox:hover {
+            background-color: rgb(106, 252, 252);
+            color: rgb(2, 29, 25);
+            box-shadow: 0 0 10px 3px rgb(106, 252, 252), 0 0 20px 3px rgb(106, 252, 252), 0 0 30px 3px rgb(106, 252, 252);
+        }
+
+        .head {
+            padding: 2vh;
+            color: rgb(103, 243, 236);
+            font-size: 24px;
+            font-family: consolas;
+            text-transform: capitalize;
+            animation: ani1;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            border-radius: 20vh;
+        }
+
+        @keyframes ani1 {
+            from {
+                box-shadow: none;
+            }
+
+            to {
+                box-shadow: 0 0 20px 3px rgb(112, 245, 216), 0 0 20px 3px rgb(112, 245, 216), 0 0 20px 3px rgb(112, 245, 216);
+            }
+        }
+
+        .cul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        /* iframe{
+            
+        } */
+        video {
+            width: 30vw;
+            height: 15vh;
+        }
+        .link{
+            color: rgb(118, 250, 232);
+            border: 1px solid rgb(19, 16, 233);
+            border-radius: 20vh;
+            text-decoration: none;
+            animation: ani2;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            padding: 3vh;
+            transition-duration: .2s;
+        }
+        @keyframes ani2 {
+            from{
+                box-shadow: none;
+            }
+            to{
+                box-shadow: 0 0 20px 3px blue, 0 0 20px 3px blue, 0 0 20px 3px blue;
+            }
+        }
+        .link:hover{
+            /* animation: none; */
+            color: rgb(190, 190, 255);
+            background-color: blue;
+            /* box-shadow: 0 0 20px 3px blue, 0 0 20px 3px blue, 0 0 20px 3px blue; */
+        }
+        .vid{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 40px 40px;
+            align-items: center;
+            justify-content: center;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .left{
+            background-color: rgb(4, 100, 95);
+            width: 20vw;
+            height: 80vh;
+            border-radius: 0 100vh 100vh 0;
+            box-shadow: 0 0 20px 3px rgb(6, 78, 78);
+            border: 3px solid rgb(26, 129, 129);
+        }
+        .right{
+            background-color: rgb(4, 100, 95);
+            height: 80vh;
+            width: 20vw;
+            border-radius: 100vh 0 0 100vh;
+            box-shadow: 0 0 20px 3px rgb(6, 78, 78);
+            border: 3px solid rgb(26, 129, 129);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="box"> <a href="teachers day.html" class="navbox" target="_self">Home</a> </div>
+                <div class="box"> <a href="nofound.html" class="navbox" target="_blank">About</a> </div>
+                <div class="box"> <a href="conus.html" class="navbox" target="_blank"> Contact Us</a></div>
+                <div class="box"> <a href="help.html" class="navbox" target="_blank">Help</a> </div>
+            </div>
+        </nav>
+    </header><br> <br>
+    <main>
+        <section class="left">
+
+        </section>
+        <div class="cul">
+            <div class="head">
+                Heading (ekhane ja lekhar lekh)
+            </div> <br> <br> <br>
+            <div class="vid">
+                <!-- vid link here -->
+               <a href="https://drive.google.com/file/d/1Hs7hR7M2fyHbLDlGvSu3WcLpkQpMobPF/view?usp=drivesdk" class="link" target="_blank">video0</a>
+                <!-- vid link here -->
+               <a href="" class="link" target="_blank">video1</a>
+                <!-- vid link here -->
+               <a href="" class="link" target="_blank">video2</a>
+                <!-- vid link here -->
+               <a href="" class="link" target="_blank">video3</a>
+                <!-- vid link here -->
+               <a href="" class="link" target="_blank">video4</a>
+               <!-- add more vids fi u want to -->
+               <a href="" class="link" target="_blank">video5</a>
+               <a href="" class="link" target="_blank">video6</a>
+               <a href="" class="link" target="_blank">video7</a>
+               <a href="" class="link" target="_blank">video8</a>
+               <a href="" class="link" target="_blank">video9</a>
+               <a href="" class="link" target="_blank">video10</a>
+               <a href="" class="link" target="_blank">video11</a>
+            </div>
+        </div>
+        <section class="right">
+            
+        </section>
+    </main>
+</body>
+
+</html>

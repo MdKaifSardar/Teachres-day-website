@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Happy Teachers Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #052c28;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100vw;
+            background-color: rgb(3, 44, 42);
+        }
+
+        .navbox {
+            display: inline-block;
+            color: turquoise;
+            text-decoration: none;
+            font-size: 3vh;
+            text-transform: capitalize;
+            margin: 2vh;
+            font-family: IBM Plex Sans Arabic;
+            border-radius: 20px;
+            padding: 1vh;
+            transition-duration: .1s;
+            /* border: 0.1px solid rgb(111, 253, 241); */
+        }
+
+        .navbox:hover {
+            color: rgb(1, 34, 31);
+            background-color: turquoise;
+            box-shadow: 0 0 10px 3px rgb(106, 252, 252), 0 0 20px 3px rgb(106, 252, 252), 0 0 30px 3px rgb(106, 252, 252);
+        }
+
+        .text {
+            border-radius: 10vh;
+            background-color: #6ff0f0;
+            transform: scale(2, 2);
+            text-align: center;
+            color: #011d20;
+            font-family: Syncopate;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            animation: popup;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            box-shadow: 0 0 30px 5px #34d8eb, 0 0 30px 5px #34d8eb, 0 0 30px 5px #34d8eb;
+            padding: 3px;
+        }
+
+        @keyframes popup {
+            from {
+                color: white;
+                transform: scale(0, 0);
+                background-color: transparent;
+                border: none;
+                border: 2px solid rgb(255, 255, 255);
+                box-shadow: none;
+            }
+
+            to {
+                color: white;
+                transform: scale(2, 2);
+                box-shadow: none;
+                background-color: transparent;
+                border: 2px solid rgb(255, 255, 255);
+                box-shadow: none;
+            }
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://i.pinimg.com/originals/e6/77/2c/e6772c88e4987be466f5b0e67b68d372.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 50vh;
+            box-shadow: 0 10px 20px 1px rgb(3, 24, 21);
+        }
+
+        .txt {
+            color: rgb(97, 241, 229);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: consolas;
+            font-size: 3vh;
+            /* border: 1px solid rgb(84, 223, 241); */
+            padding: 5px;
+            border-radius: 30vh;
+            box-shadow: -5px -5px 5px 1px rgb(27, 105, 105), 5px 5px 5px 1px rgb(3, 24, 21);
+            transition-duration: .1s;
+        }
+
+        .abimg {
+            width: 40vh;
+            height: 40vh;
+            align-self: center;
+            box-shadow: -5px -5px 7px 2px rgb(27, 105, 105), 5px 5px 7px 2px rgb(3, 24, 21);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .abdiv {
+            border-radius: 30vh;
+            margin: 0 0 5vh 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .txt:hover {
+            background-color: rgb(27, 241, 224);
+            color: rgb(4, 39, 36);
+            box-shadow: 0 0 30px 4px rgb(27, 241, 224), 0 0 30px 4px rgb(27, 241, 224), 0 0 30px 4px rgb(27, 241, 224);
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .whole {
+            margin: 5vh 0 0 0;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .row {
+            background-color: red;
+            margin: 0 0 2vh 0;
+            height: 10vh;
+        }
+
+        .row1 {
+            width: 30vw;
+            background-color: rgb(0, 39, 34);
+            animation: row1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .row2 {
+            width: 26vw;
+            background-color: rgb(1, 77, 66);
+            animation: row2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .row3 {
+            width: 22vw;
+            background-color: rgb(1, 100, 87);
+            animation: row3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .row4 {
+            width: 18vw;
+            background-color: rgb(0, 156, 135);
+            animation: row4;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .row5 {
+            width: 18vw;
+            background-color: rgb(0, 156, 135);
+            animation: row4;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .row6 {
+            width: 22vw;
+            background-color: rgb(1, 100, 87);
+            animation: row3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .row7 {
+            width: 26vw;
+            background-color: rgb(1, 77, 66);
+            animation: row2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .row8 {
+            width: 30vw;
+            background-color: rgb(0, 39, 34);
+            animation: row1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+
+        .left {
+            width: fit-content;
+            /* background-color: yellow; */
+            height: fit-content;
+            justify-content: center;
+            /* width: 20vw; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .right {
+            width: fit-content;
+            /* background-color: green; */
+            height: fit-content;
+            justify-content: center;
+            /* width: 20vw; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .thing {
+            /* border: 1px solid rgb(66, 215, 235); */
+            border-radius: 4vh;
+            padding: 2vh;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -5px -5px 5px 1px rgb(27, 105, 105), 5px 5px 5px 1px rgb(3, 24, 21);
+        }
+
+        .txt1 {
+            text-align: center;
+            color: rgb(97, 241, 229);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: consolas;
+            font-size: 3vh;
+        }
+
+        @keyframes row4 {
+            from {
+                width: 16vw;
+            }
+
+            to {
+                width: 30vw;
+            }
+        }
+
+        @keyframes row3 {
+            from {
+                width: 20vw;
+            }
+
+            to {
+                width: 26vw;
+            }
+        }
+
+        @keyframes row2 {
+            from {
+                width: 26vw;
+            }
+
+            to {
+                width: 22vw;
+            }
+        }
+
+        @keyframes row1 {
+            from {
+                width: 30vw;
+            }
+
+            to {
+                width: 18vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="box"> <a href="index.html" class="navbox" target="_self">Home</a> </div>
+                <div class="box"> <a href="nofound.html" class="navbox" target="_blank">About</a> </div>
+                <div class="box"> <a href="contact us.html" class="navbox" target="_blank"> Contact Us</a></div>
+                <div class="box"> <a href="help.html" class="navbox" target="_blank">Help</a> </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="lanimg">
+            <div class="img">
+                <div class="text">
+                    <b>Happy Teachers Day Sir</b>
+                </div>
+            </div>
+        </section>
+        <section class="whole">
+            <section class="left">
+                <div class="align">
+                    <div class="row row1" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                    <div class="row row2" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                    <div class="row row3" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                    <div class="row row4" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                    <div class="row row5" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                    <div class="row row6" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                    <div class="row row7" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                    <div class="row row8" style="border-radius: 0 50px 50px 0; transform-origin: left;"></div>
+                </div>
+            </section>
+
+            <section class="main">
+
+                <div>
+                    <!-- image abhinandan sir -->
+                    <div class="abdiv">
+                        <img src="https://yt3.ggpht.com/aG_JP7gpMadv8o2dTQpWUwRc8hz-FM9CcuKGS2OmGU4bWAGXzllm-rPqrRah9wW2qL97UXSf=s900-c-k-c0x00ffffff-no-rj" alt="teacher" class="abimg" style="border-radius: 30vh;">
+                    </div>
+                    <!-- about abhinandan sir -->
+                    <div class="name">
+                        <a href="abhi sir.html" class="txt" target="_blank">
+                            Abhinandan Sarkar
+                        </a><br>
+                        <a href="https://www.youtube.com/c/AbhisTechLab" class="txt" target="_blank">
+                            link for ATL
+                        </a>
+                    </div>
+                </div><br> <br> <br> <br>
+
+                <div class="txt1">
+                    other stuffs
+                </div> <br>
+                <div class="thing">
+                    <a href="tea gal.html" class="txt" target="_blank">Gallery</a> <br>
+                    <a href="cul.html" class="txt" target="_blank">Cultural Programmes</a>
+                </div>
+            </section>
+
+            <section class="right">
+                <div class="row row1" style="border-radius: 50px 0 0 50px; transform-origin: right;"></div>
+                <div class="row row2" style="border-radius: 50px 0 0 50px; transform-origin: right;"></div>
+                <div class="row row3" style="border-radius: 50px 0 0 50px; transform-origin: right;"></div>
+                <div class="row row4" style="border-radius: 50px 0 0 50px; transform-origin: right;"></div>
+                <div class="row row5" style="border-radius: 50px 0 0 50px; transform-origin: right; "></div>
+                <div class="row row6" style="border-radius: 50px 0 0 50px; transform-origin: right;"></div>
+                <div class="row row7" style="border-radius: 50px 0 0 50px; transform-origin: right;"></div>
+                <div class="row row8" style="border-radius: 50px 0 0 50px; transform-origin: right;"></div>
+            </section>
+        </section> <br>
+    </main>
+</body>
+
+</html>

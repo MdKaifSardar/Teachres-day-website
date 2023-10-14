@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap" rel="stylesheet">
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0f3d38;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100vw;
+            background-color: rgb(3, 44, 42);
+            box-shadow: 0 0 20px 3px rgb(14, 90, 77);
+        }
+
+        .navbox {
+            display: inline-block;
+            color: turquoise;
+            text-decoration: none;
+            font-size: 3vh;
+            text-transform: capitalize;
+            margin: 2vh;
+            font-family: IBM Plex Sans Arabic;
+            border-radius: 20px;
+            padding: 1vh;
+            transition-duration: .1s;
+            /* border: 0.1px solid rgb(111, 253, 241); */
+        }
+
+        .navbox:hover {
+            color: rgb(1, 34, 31);
+            background-color: turquoise;
+            box-shadow: 0 0 10px 3px rgb(106, 252, 252), 0 0 20px 3px rgb(106, 252, 252), 0 0 30px 3px rgb(106, 252, 252);
+        }
+
+        .head {
+            padding: 2vh;
+            color: rgb(103, 243, 236);
+            font-size: 24px;
+            font-family: consolas;
+            text-transform: capitalize;
+            animation: ani1;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            border-radius: 20vh;
+        }
+
+        @keyframes ani1 {
+            from {
+                box-shadow: none;
+            }
+
+            to {
+                box-shadow: 0 0 20px 3px rgb(112, 245, 216), 0 0 20px 3px rgb(112, 245, 216), 0 0 20px 3px rgb(112, 245, 216);
+            }
+        }
+        .abt{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .sir{
+            background-color: red;
+            border-radius: 100vh;
+            width: 30vw;
+            height: 30vw;
+            box-shadow: -5px -5px 10px 3px rgb(19, 95, 95), 5px 5px 10px 3px rgb(5, 22, 20)
+        }
+        .p{
+            color: rgb(89, 214, 236);
+            font-size: 24px;
+            font-family: consolas;
+            margin: 5vh;
+            border-radius: 20vw;
+            padding: 1vh;
+            animation: ani1;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        .images{
+            display: grid;
+            grid-gap: 40px 40px;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 5vh;
+            box-shadow: -5px -5px 5px 1px rgb(27, 105, 105), 5px 5px 5px 1px rgb(3, 24, 21);
+        }
+        .pics{
+            width: 20vw;
+            box-shadow: 2px 2px 10px 3px rgb(2, 43, 29);
+            transition-duration: 1s;
+            box-shadow: 0 0 20px 3px rgb(20, 96, 99);
+        }
+        .pics:hover{
+            transform: scale(1.2, 1.2);
+        }
+        .realabt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .links{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: -5px -5px 5px 1px rgb(27, 105, 105), 5px 5px 5px 1px rgb(3, 24, 21);
+        }
+        .p1{
+            color: rgb(115, 224, 243);
+            font-size: 24px;
+            font-family: consolas;
+            margin: 5vh;
+            border-radius: 20vw;
+            padding: 1vh;
+            text-decoration: none;
+            transition-duration: 2s;
+        }
+        .p1:hover{
+            border: 1px solid rgb(162, 255, 247);
+            border-radius: 20vh;
+        }
+        .videos{
+            display: grid;
+            grid-gap: 40px 40px;
+            grid-template-columns: auto auto auto;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 5vh;
+            box-shadow: -5px -5px 5px 1px rgb(27, 105, 105), 5px 5px 5px 1px rgb(3, 24, 21);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="box"> <a href="teachers day.html" class="navbox" target="_self">Home</a> </div>
+                <div class="box"> <a href="nofound.html" class="navbox" target="_blank">About</a> </div>
+                <div class="box"> <a href="contact us.html" class="navbox" target="_blank"> Contact Us</a></div>
+                <div class="box"> <a href="help.html" class="navbox" target="_blank">Help</a> </div>
+            </div>
+        </nav>
+    </header><br> <br>
+    <main>
+        <div class="abt">
+            <img src="abhisir.jpeg" alt="" class="sir">
+            <div class="realabt">
+                <div class="p">
+                    Abhinandan Sarkar (Owner of the ATL)
+                </div>
+                <div class="p" style="text-align: center;">
+                    M.sc., B.Ed in Computer Science
+                </div> <br>
+                <div  class="links" style="text-align: center;">
+                    <a href="https://www.google.com/maps/place/Abhi's+Tech+Lab/@22.4314971,88.4120806,17z/data=!3m1!4b1!4m5!3m4!1s0x3a02720e1c7fba31:0x9cb768b88853e437!8m2!3d22.4314922!4d88.4142693?hl=en" class="p1" target="_blank">Abhi's Tech Lab (on map)</a>
+                    <a href="https://www.facebook.com/abhistechlab/" class="p1" target="_blank">Abhis Tech Lab (Facebook Page)</a>
+                    <a href="jani na.html" class="p1" target="_blank">(Jani na twitter ba instagram account ache ki na)</a>
+                </div> <br> <br>
+                <div class="p" style="text-align: center;">
+                    sir er chobi (jodio oi alien er moto dekhte ota ke jani na)
+                </div> <br> <br>
+            </div>
+            <div class="images">
+                <img src="abhisir (1).jpeg" alt="" class="pics">
+                <img src="abhisir (2).jpeg" alt="" class="pics">
+                <img src="abhisir (3).jpeg" alt="" class="pics">
+                <img src="abhisir (4).jpeg" alt="" class="pics">
+                <img src="abhisir (5).jpeg" alt="" class="pics">
+                <img src="abhisir.jpeg" alt="" class="pics">
+            </div> <br> <br>
+            <div class="p">
+                Kara enara??
+            </div> <br> <br>
+            <div class="videos">
+                <video src="vid (1).mp4" controls width="300vh" height="300vh"></video>
+                <video src="vid (2).mp4" controls width="300vh" height="300vh"></video>
+                <video src="vid (3).mp4" controls width="300vh" height="300vh"></video>
+            </div>
+        </div>
+    </main>
+
+</body>
+<footer>
+    
+</footer>
+</html>
